@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFESIONAL FIVEM SCRIPT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 100px 20px 50px;
+        }
+        header h1 {
+            font-size: 3.5em;
+            color: #00ffcc;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #cccccc;
+        }
+        nav {
+            margin: 30px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .category {
+            background: #2b2b2b;
+            padding: 30px;
+            border-radius: 10px;
+            width: 200px;
+            transition: 0.3s;
+        }
+        .category:hover {
+            background: #3b3b3b;
+            transform: scale(1.05);
+        }
+        .payment-section {
+            margin: 50px 0;
+        }
+        .pay-btn {
+            background-color: #00ffcc;
+            color: black;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .pay-btn:hover {
+            background-color: #00ddb3;
+        }
+        .payment-options {
+            display: none;
+            margin-top: 20px;
+        }
+        .payment-options button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #444;
+            color: white;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #00ffcc;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PROFESIONAL FIVEM SCRIPT</h1>
+        <p>Scripturi FiveM optimizate pentru orice PC</p>
+    </header>
+
+    <nav>
+        <a href="#">Acasă</a>
+        <a href="#">Scripturi</a>
+        <a href="#">Contact / Plată</a>
+    </nav>
+
+    <section class="categories">
+        <div class="category">ESX Scripts</div>
+        <div class="category">QBCore Scripts</div>
+        <div class="category">Standalone Scripts</div>
+    </section>
+
+    <section class="payment-section">
+        <button class="pay-btn" onclick="showPaymentOptions()">Plătește</button>
+        <div class="payment-options" id="paymentOptions">
+            <button onclick="showContact()">PayPal</button>
+            <button onclick="showContact()">Revolut</button>
+            <button onclick="showContact()">Paysafecard</button>
+        </div>
+        <div class="contact-info" id="contactInfo">
+            Contactează-l pe <strong>negro10760</strong> pe Discord pentru mai multe detalii.
+        </div>
+    </section>
+
+    <script>
+        function showPaymentOptions() {
+            document.getElementById('paymentOptions').style.display = 'block';
+            document.getElementById('contactInfo').style.display = 'none';
+        }
+        function showContact() {
+            document.getElementById('contactInfo').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
